@@ -7,6 +7,8 @@ import android.widget.Button
 import android.widget.SeekBar
 import android.widget.TextView
 
+const val EXTRA_SQUARE_SIZE = "com.example.landscapelayout.tap_the_square.SQUARE.SIZE"
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var seekBar: SeekBar
@@ -47,6 +49,7 @@ class MainActivity : AppCompatActivity() {
     private fun showSquare() {
         // launch square activity, set size of square based on the progress
         val showSquareIntent = Intent(this, SquareActivity::class.java)
+        showSquareIntent.putExtra(EXTRA_SQUARE_SIZE, seekBar.progress)
         startActivity(showSquareIntent)
     }
 
