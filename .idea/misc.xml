@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Sonic/AndroidStudioProjects/LandscapeLayout2/app/src/main/res/layout-land/activity_main.xml" value="0.5" />
-        <entry key="..\:/Users/Sonic/AndroidStudioProjects/LandscapeLayout2/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/Sonic/AndroidStudioProjects/LandscapeLayout2/app/src/main/res/drawable/square.xml" value="0.1245" />
+        <entry key="..\:/Users/Sonic/AndroidStudioProjects/LandscapeLayout2/app/src/main/res/layout-land/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Sonic/AndroidStudioProjects/LandscapeLayout2/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Sonic/AndroidStudioProjects/LandscapeLayout2/app/src/main/res/layout/activity_square.xml" value="0.33" />
       </map>
     </option>
   </component>

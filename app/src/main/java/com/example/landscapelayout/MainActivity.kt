@@ -1,7 +1,9 @@
 package com.example.landscapelayout
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.SeekBar
 import android.widget.TextView
 
@@ -9,6 +11,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var seekBar: SeekBar
     private lateinit var seekBarLabel: TextView
+    private lateinit var showSquareButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         seekBar = findViewById(R.id.seek_bar)
         seekBarLabel = findViewById(R.id.seek_bar_label)
+        showSquareButton = findViewById(R.id.show_square_btn)
 
         val initialProgress = seekBar.progress
         updateLabel(initialProgress)
@@ -30,9 +34,20 @@ class MainActivity : AppCompatActivity() {
             override fun onStopTrackingTouch(p0: SeekBar?) {}
         })
 
+        showSquareButton.setOnClickListener {
+            showSquare()
+        }
+
     }
 
     private fun updateLabel(progress: Int) {
         seekBarLabel.text = getString(R.string.seekbar_value_message, progress)
     }
+
+    private fun showSquare() {
+        // launch square activity, set size of square based on the progress
+        val showSquareIntent = Intent(this, SquareActivity::class.java)
+        startActivity(showSquareIntent)
+    }
+
 }
