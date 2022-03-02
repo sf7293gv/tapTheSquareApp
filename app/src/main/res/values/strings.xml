@@ -3,4 +3,7 @@
     <string name="seekbar_value_message">The seekbar value is %1$d</string>
     <string name="square">Show Square</string>
     <string name="instructions">Try to tap the square.</string>
+    <string name="tapped_square">You tapped the square</string>
+    <string name="missed_square">You missed the square</string>
+    <string name="did_not_try">Please tap</string>
 </resources>
